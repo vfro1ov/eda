@@ -1,0 +1,41 @@
+// .footer {
+// 	// align-items: end;
+// 	left: 0;
+// 	bottom: 0;
+// 	height:30px;
+// 	width:100%;
+
+// 	&_list {
+// 		cursor: pointer;
+// 		color: blue;
+// 	}
+// }
+
+.footer {
+	min-height: 100%;
+	margin: 0 auto -4rem; // значение обратное высоте footer
+	background-color: salmon;
+	height: 1rem; // высота footer
+	// position: absolute;
+	position:fixed;
+	margin: 0 auto -4em;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		// right: 0;
+
+
+	&-list {
+		cursor: pointer;
+		color:blue;
+	}
+	&-list li {
+		text-align: center;
+		display: block;
+		margin-right: 1rem;
+		text-align: left;
+	}
+}
+
+.footer{
+}
