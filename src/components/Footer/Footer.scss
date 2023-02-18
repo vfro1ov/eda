@@ -1,41 +1,51 @@
-// .footer {
-// 	// align-items: end;
-// 	left: 0;
-// 	bottom: 0;
-// 	height:30px;
-// 	width:100%;
-
-// 	&_list {
-// 		cursor: pointer;
-// 		color: blue;
-// 	}
-// }
-
 .footer {
-	min-height: 100%;
-	margin: 0 auto -4rem; // значение обратное высоте footer
-	background-color: salmon;
-	height: 1rem; // высота footer
-	// position: absolute;
-	position:fixed;
-	margin: 0 auto -4em;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		// right: 0;
-
-
-	&-list {
-		cursor: pointer;
-		color:blue;
+	margin-top: auto; // значение обратное высоте footer
+	background-color: #24262b;
+	height: 300px;
+	display: grid;
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: 50vh;
+		justify-content: space-between;
+		padding: 20px;
+		&-list {
+			color:rgb(232, 232, 236);
+			font-size: 20px;
+			padding: 0 auto;
+		}
+		&-list li {
+			cursor: pointer;
+			text-align: center;
+			display: block;
+			margin-right: 1rem;
+			text-align: left;
+		}
+		&-app {
+			color:rgb(232, 232, 236);
+			font-size: 20px;
+			padding: 0 auto;
+		}
+		&-app li{
+			cursor: pointer;
+			text-align: center;
+			display: inline-block;
+			margin-right: 1rem;
+			text-align: left;
+		}
+		&-social {
+			color:rgb(232, 232, 236);
+			font-size: 20px;
+			padding: 0 auto;
+		}
+		&-social li {
+			cursor: pointer;
+			text-align: center;
+			display: inline-block;
+			margin-right: 1rem;
+			text-align: left;
+		}
 	}
-	&-list li {
-		text-align: center;
-		display: block;
-		margin-right: 1rem;
-		text-align: left;
-	}
+	
 }
 
-.footer{
-}
