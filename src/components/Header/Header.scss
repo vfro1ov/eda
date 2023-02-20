@@ -1,5 +1,77 @@
 .header {
-	background-color: #f53030;
+	background-color: rgba(255, 255, 255, 0.75);
 	height: 2fr;
 	width: 3fr;
+	border-bottom: 4px solid rgb(255, 105, 0);;
+	&-logo {
+		margin-right: 20px;
+	}
+	&-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 55px;
+		padding-bottom: 55px;
+	}
+}
+.menu {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.menu-element {
+	padding: 20px;
+	margin-right: 35px;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 1.5;
+	color: rgb(3, 3, 3);
+	display: inline-block;
+	transition-duration: 500ms;
+	transition-property: color;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.menu-element a {
+	text-decoration: none;
+	&:before {
+		content: '';
+		width: 9px;
+		height: 2px;
+		background-color: rgb(255, 105, 0);;
+		display: block;
+		margin-bottom: 2px;
+		opacity: 0;
+		transition-duration: 500ms;
+		transition-property: opacity;
+	}
+	&:hover {
+		color: rgb(255, 105, 0);;
+		&:before {
+			opacity: 1;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		&-wrap {
+			flex-direction: column;
+			justify-content: flex-start;
+			padding-top: 25px;
+			padding-bottom: 25px;
+		}
+		&-logo {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+	.menu-element {
+		margin-right: 20px;
+	}
 }
