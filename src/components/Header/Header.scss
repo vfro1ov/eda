@@ -4,7 +4,27 @@
 	width: 3fr;
 	border-bottom: 4px solid rgb(255, 105, 0);;
 	&-logo {
-		margin-right: 20px;
+		margin-left: 60px;
+	}
+	&-logo p {
+		margin-left: 60px;
+		&:before {
+			content: '';
+			width: 9px;
+			height: 2px;
+			background-color: rgb(255, 105, 0);;
+			display: block;
+			margin-bottom: 2px;
+			opacity: 0;
+			transition-duration: 500ms;
+			transition-property: opacity;
+		}
+		&:hover {
+			color: rgb(255, 105, 0);;
+			&:before {
+				opacity: 1;
+			}
+		}
 	}
 	&-wrap {
 		display: flex;
@@ -13,6 +33,25 @@
 		align-items: center;
 		padding-top: 55px;
 		padding-bottom: 55px;
+	}
+	&-profile {
+		display: grid;
+		flex-wrap: wrap;
+		margin-left: 20px;
+
+	}
+	&-cart {
+		display: grid;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-style: normal;
+		margin-right: 80px;
+	}
+	&-cart button{
+		background-color: rgb(255, 105, 0);
+		border: 1px solid rgb(255, 105, 0);
+		border-radius: 15px;
+		height: 40px;
+		width: 100px;
 	}
 }
 .menu {
@@ -39,6 +78,7 @@
 }
 .menu-element a {
 	text-decoration: none;
+	color: rgb(3, 3, 3);
 	&:before {
 		content: '';
 		width: 9px;

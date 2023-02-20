@@ -42,7 +42,7 @@ export const Footer = () => {
 				<div className="footer-items-list">
 					<h4>Eda Dostavka</h4>
 					{list.map((list, index) => {
-						return <li key={index}>{list.name}</li>;
+						return <li key={index}><a href="/">{list.name}</a></li>;
 					})}
 				</div>
 				<div className="footer-items-social">
